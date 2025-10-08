@@ -22,7 +22,7 @@ export const appConfig: ApplicationConfig = {
       loader: provideTranslateHttpLoader({
         prefix: '/assets/i18n/',
         suffix: '.json'
-      }),
+      })
     })
   ]
 };
