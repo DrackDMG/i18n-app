@@ -1,7 +1,6 @@
 <p class="mt-10"> languaje selector</p>
 
-<select class="flex" (change)="changeLanguage($event)"
->
+<select class="flex" [value]="currentLang()" (change)="changeLanguage($event)">
   @for (lang of languages(); track lang.code) {
   <option [value]="lang.code">{{ lang.code }} {{ lang.flag }}</option>
   }

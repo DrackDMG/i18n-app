@@ -8,7 +8,9 @@ import { LanguageService } from '../../service/language.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LanguageSelectorComponent {
-   languageService = inject(LanguageService);
+ languageService = inject(LanguageService);
+
+  currentLang = this.languageService.currentLang;
 
   languages = signal([
     { code: 'en', flag: '🇺🇸' },
